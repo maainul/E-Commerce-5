@@ -141,7 +141,81 @@ body::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 70%);
 }
 
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+
 
 /********************  
 ******* HEADER ******
 *********************/
+
+
+.desktop-navigation-menu {
+  display: none;
+}
+
+.header-social-container {
+  display: flex;
+  gap: 5px;
+}
+
+.header-top .container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  color: var(--sonic-silver);
+}
+
+.header-top {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cultured);
+}
+
+.social-links {
+  color: var(--sonic-silver);
+  padding: 5px;
+  background: hsl(0, 0%, 95%);
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-timing);
+}
+
+.social-links:hover {
+  background: var(--salmon-pink);
+  color: var(--white);
+}
+
+.header-alert-news {
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+}
+
+.header-top-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-top-actions select {
+  border: none;
+  min-width: 80px;
+  padding: 5px 0;
+  color: var(--sonic-silver);
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-timing);
+  font: inherit;
+  display: block;
+}
+
+.header-top-actions select:focus {
+  border: none;
+  outline: none;
+}
