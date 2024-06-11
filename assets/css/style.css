@@ -155,11 +155,6 @@ body::-webkit-scrollbar-thumb:hover {
 ******* HEADER ******
 *********************/
 
-
-.desktop-navigation-menu {
-  display: none;
-}
-
 .header-social-container {
   display: flex;
   gap: 5px;
@@ -285,4 +280,25 @@ body::-webkit-scrollbar-thumb:hover {
 .header-search-container .search-field:focus {
   outline: none;
   border: 1px solid var(--ocean-green);
+}
+
+/* Categorys and Mega Menu */
+.desktop-navigation-menu {
+  border-top: 1px solid var(--cultured);
+}
+
+.desktop-menu-category-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.menu-title {
+  color: var(--onyx);
+  font-weight: var(--weight-600);
+  font-size: var(--fs-5);
+  text-transform: uppercase;
+  padding: 15px 0;
+  transition: var(--transition-timing);
 }
