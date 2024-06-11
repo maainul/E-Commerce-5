@@ -219,3 +219,70 @@ body::-webkit-scrollbar-thumb:hover {
   border: none;
   outline: none;
 }
+
+/* Logo and Search bar */
+.header-main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.header-search-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  position: relative;
+}
+
+
+.header-user-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.header-user-actions .header-user-actions {
+  width: 100%;
+  height: 100%;
+  color: var(--onyx);
+  font-size: 35px;
+}
+
+.action-btn {
+  font-size: 35px;
+  color: var(--onyx);
+  position: relative;
+}
+
+.action-btn .count {
+  position: absolute;
+  top: -10px;
+  right: -7px;
+  background: var(--bittersweet);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 20px;
+}
+
+.search-btn {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.header-search-container .search-field {
+  padding-right: 50px;
+  border: 1px solid var(--cultured);
+  color: var(--onyx);
+  font-size: var(--fs-7);
+  padding: 10px 15px;
+  border-radius: var(--border-radius-md);
+}
+
+.header-search-container .search-field:focus {
+  outline: none;
+  border: 1px solid var(--ocean-green);
+}
