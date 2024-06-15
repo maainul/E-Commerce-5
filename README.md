@@ -424,3 +424,77 @@ export default App;
 ### Summary
 
 JSX is a powerful way to write HTML-like syntax within JavaScript, enabling a more intuitive way to define React components and their structure. By embedding JavaScript expressions and handling attributes in a way that leverages the full power of JavaScript, JSX provides a seamless way to develop dynamic and complex user interfaces. Understanding the nuances between JSX and HTML is crucial for writing effective and bug-free React code.
+
+## 3. ReactJS Components
+
+#### 3.1. ReactJS Functional Components
+
+We can create a functional component in React by writing a JavaScript function. These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.
+
+
+***Ways to call the functional component:***
+
+1. Call the function by using the name of the function followed by the Parentheses
+2. Call the function by using the functional component method.
+
+
+1. Call the function by using the name of the function followed by the Parentheses
+```.js
+function Parentheses(){
+   return (
+      <h1> Hi there</h1>
+   )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(Parentheses());
+```
+
+2. Call the function by using the functional component method.
+```.js
+function Comp(){
+   return(
+      <h1>Hi</h1>
+   )
+}
+
+const root = ReactDom.creaeRoot(document.getElementById('root'))
+root.render(<Comp/>)
+
+
+```
+
+#### Problem with using functional components
+Functional components lack a significant amount of features as compared to class-based components and they do not have access to dedicated state variables like class-based components.
+
+#### Advantage of using hooks in functional component
+
+
+### Create a Function that can update state
+
+```js
+import React, { useState } from 'react';
+
+export default function Counter() {
+    const [count, setCount] = useState(0);
+
+    function handleIncrement() {
+        setCount(count + 1);
+    }
+
+    function handleDecrement() {
+        setCount(count - 1);
+    }
+
+    return (
+        <>
+            <h1>Counter</h1>
+            <button onClick={handleIncrement}>Increment </button>
+            <h1>{count}</h1>
+            <button onClick={handleDecrement}>Decrement </button>
+        </>
+    );
+}
+
+```
+![image](https://github.com/maainul/E-Commerce-5/assets/37740006/2db2bbbf-737e-48c5-8b44-6d3523e6e7fd)
